@@ -1,0 +1,12 @@
+Let's have a little walk through the infrastructure needed for this web application :
+
+--> The initial architecture of this web app will consist of a number of AWS Resources such as : 
+1- EC2 instances
+2- Amazon S3 Bucket
+3- A Virtual Private Cloud " VPC " and some Subnets
+4- Security Groups having defined inbound and outbound Rules
+5- An Application Load Balancer which will have an Application Load Balancer target group attached to it.
+6- A Route 53 Zone with DNS Record
+7- A RDS instances
+
+NB: We will also define the AWS BackEnd Configuration using the Terraform Configuration File.
