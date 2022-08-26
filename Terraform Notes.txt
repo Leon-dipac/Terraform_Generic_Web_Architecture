@@ -1,0 +1,154 @@
+Infrastructure as A code :
+
+--> Complete Terraform Course - From BEGINNER to PRO :
+
+    1- Link : https://www.youtube.com/watch?v=7xngnjfIlK4
+
+    2- GitHub Repository : https://github.com/sidpalas/devops-directive-terraform-course
+
+    3- Introduction to Terraform : https://www.terraform.io/intro
+
+    4- Learn Terraform From HashiCorp : 
+
+       Link: https://learn.hashicorp.com/terraform?_ga=2.211563603.773379919.1661428876-1149461201.1661428876
+
+    5- AWS Documentation through example usage of Terraform : 
+
+        Link : https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+
+
+
+
+--> We will be going through the basic all the way to the modular automated infrastructures code configuration 
+ deploying to both a staging and a production environment using Terraform.
+
+--> Terraform is a tool for building, changing, and versioning infrastructure safely and efficiently. 
+It falls into this category of Infrastructure as A Code tools which allow you to define your entire Cloud infrastructure 
+as a set of config files which then the tool Terraform can go off and interact with the Cloud Provider API and provision and 
+manage it on our behalf.
+
+  -> Standardize your deployment workflow :
+
+Providers define individual units of infrastructure, for example compute instances or private networks, as resources.
+ You can compose resources from different providers into reusable Terraform configurations called modules, 
+and manage them with a consistent language and workflow.
+
+Terraform's configuration language is declarative, meaning that it describes the desired end-state for your infrastructure, 
+in contrast to procedural programming languages that require step-by-step instructions to perform tasks. 
+Terraform providers automatically calculate dependencies between resources to create or destroy them in the correct order.
+
+To deploy infrastructure with Terraform:
+
+  -> Scope - Identify the infrastructure for your project.
+
+  -> Author - Write the configuration for your infrastructure.
+  
+  -> Initialize - Install the plugins Terraform needs to manage the infrastructure.
+
+  -> Plan - Preview the changes Terraform will make to match your configuration.
+
+  -> Apply - Make the planned changes.
+
+
+
+
+  --> Track your infrastructure :
+
+Terraform keeps track of your real infrastructure in a state file, which acts as a source of truth for your environment. 
+Terraform uses the state file to determine the changes to make to your infrastructure so that it will match your configuration.
+
+
+  --> Collaborate :
+
+Terraform allows you to collaborate on your infrastructure with its remote state backends. When you use Terraform Cloud (free for up to five users), 
+you can securely share your state with your teammates, provide a stable environment for Terraform to run in, 
+and prevent race conditions when multiple people make configuration changes at once.
+
+You can also connect Terraform Cloud to version control systems (VCSs) like GitHub, GitLab, and others, allowing it to automatically
+ propose infrastructure changes when you commit configuration changes to VCS. This lets you manage changes to your infrastructure 
+through version control, as you would with application code.
+
+
+
+--> Course Overview :
+
+   -> Evolution of Cloud and Infrastructure as Code : Back in the days, hosting an application required a lot of physical servers, 
+physical hardware to run your own datacenter and those will build up a huge infrastructure with cables and hardware. 
+
+Today using Infrastructure as a code approach, we can provision all those elaborated resources needed by our infrastructure 
+using a simple click of button on a given cloud provider environment such as AWS, Google Cloud, Azure and others. 
+
+This is known as Deploying your infrastructure resources into the Cloud. This will avoid buying your own servers physically. 
+
+Most companies use this technic to fullfill their On-demand resource that they can pay a cloud provider to spin up and spin down 
+servers versus having to deal with managing all that themselves.
+
+Through this approach, Infrastructure is now provisioned via APIs defined as Application Program Interfaces or Command Line Interfaces " CLI ".
+
+We have to note that the speed that the resources are created and destroyed using this approach is a game changer. This happens in Seconds.
+
+
+  --> How Does Terraform work :
+
+Terraform creates and manages resources on cloud platforms and other services through their application programming interfaces (APIs). 
+Providers enable Terraform to work with virtually any platform or service with an accessible API.
+
+The core Terraform workflow consists of three stages:
+
+- Write: You define resources, which may be across multiple cloud providers and services. 
+For example, you might create a configuration to deploy an application on virtual machines in a Virtual Private Cloud (VPC) network 
+with security groups and a load balancer.
+
+- Plan: Terraform creates an execution plan describing the infrastructure it will create, update, or destroy based on the existing infrastructure 
+and your configuration.
+
+- Apply: On approval, Terraform performs the proposed operations in the correct order, respecting any resource dependencies. 
+For example, if you update the properties of a VPC and change the number of virtual machines in that VPC, 
+Terraform will recreate the VPC before scaling the virtual machines.
+
+
+   -> Terraform Overview and Setup :
+
+  To install Terraform, please use the documentation given below : 
+         Link: https://learn.hashicorp.com/tutorials/terraform/install-cli
+
+  To Authenticate with AWS, You can create a specific IAM User through your AWS Management console for the purpose of using Terraform.
+
+  Install the AWS Command Line and Configure your AWS Credentials by running the " aws configure " command :
+         Link : https://aws.amazon.com/cli/
+
+   The " aws configure " command will prompt us to enter the credentials that will be used by terraform to interact with our AWS account  such as :
+
+       - AWS Access Key ID :
+
+       - AWS Secret  Access Key :
+
+       - Default Region name [ us-east-1 ] : "please just press Enter to leave this as default "
+
+       - Default Output Format [ json ] : "please just press Enter to leave this as default "
+
+   
+
+   -> Basic Terraform Usage :
+
+
+   -> Variables and Outputs :
+
+
+
+   -> Languages Features :
+
+
+   -> Project Organization and Building Reusable Modules :
+
+
+
+   -> Managing Multiple Environments like a staging, development and production environment using Terraform :
+
+
+   -> Developer Workflows : 
+
+
+
+
+   
